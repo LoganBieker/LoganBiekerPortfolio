@@ -6,12 +6,15 @@ export default function Projects(props) {
         [
             {
                 link: "https://washbearbrewingclient.azurewebsites.net/",
-                imagePath: "./profile.jpg",
+                imagePath: "./brewing_website.png",
                 title: "Brewery Website",
                 techStack:
                     [
                         "./react.png",
-                        "./react.png"
+                        "./nodejs.svg",
+                        "./mssql.png",
+                        "./azure.png",
+                        "./docker.png"
                     ]
             }
             ,
@@ -41,11 +44,13 @@ export default function Projects(props) {
         <div id={props.id} className='all-project-container'>
             {allProjectInfo.map((projectInfo, index) => {
                 return (
-                    <div className="project-container" key={index}>
-                        <img className='project-image' src={projectInfo.imagePath}></img>
+                    <a href={projectInfo.link} target='_blank' className="project-container" key={index}>
+
                         <h1 className="project-title">{projectInfo.title}</h1>
+
                         <TechImages techStack={projectInfo.techStack}></TechImages>
-                    </div>
+                        <img className='project-image' src={projectInfo.imagePath}></img>
+                    </a>
                 )
             })}
         </div>
