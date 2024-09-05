@@ -1,0 +1,115 @@
+
+.exp-page
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.exp-container {
+    border: solid;
+    border-radius: 30px;
+    display: flex;
+    margin: 10%;
+    height: auto;
+    background-color: #8EB897;
+}
+
+.exp-jobs-container
+{
+    width: fit-content;
+    flex: 1;
+}
+
+.exp-detail-container
+{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+    border-left: solid;
+}
+
+.exp-jobs-card
+{
+    border-bottom: solid;
+    height: 85px;
+    min-height: 100px;
+    min-width: 200px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.1em;
+}
+
+.exp-jobs-card:last-child
+{
+    border-bottom: none;
+    border-bottom-left-radius: 30px;
+}
+
+.exp-jobs-card:first-child
+{
+
+    border-top-left-radius: 30px;
+}
+
+.exp-jobs-card:hover
+{
+    cursor: pointer;
+    background-color: #2b755320;
+}
+
+.selected
+{
+  color: #2b7553;
+}
+
+.job-info
+{
+    padding: 0px 1em;
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for tablets and smaller devices */
+
+    .exp-page
+    {
+        height: auto;
+        padding-top: 20vh;
+    }
+    .exp-container {
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .exp-jobs-container,
+    .exp-detail-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .exp-jobs-card {
+        height: auto; /* Make job cards taller as width shrinks */
+        padding: .5em;
+    }
+
+    .exp-detail-container
+    {
+        border: none;
+    }
+
+    .exp-jobs-card:last-child
+    {
+        border-bottom: solid;
+        border-bottom-left-radius: 0px;
+    }
+}
