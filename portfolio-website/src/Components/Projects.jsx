@@ -18,26 +18,6 @@ export default function Projects(props) {
                     ]
             }
             ,
-            {
-                link: "https://washbearbrewingclient.azurewebsites.net/",
-                imagePath: "./profile.jpg",
-                title: "Brewery Website",
-                techStack:
-                    [
-                        "./react.png",
-                        "./react.png"
-                    ]
-            },
-            {
-                link: "https://washbearbrewingclient.azurewebsites.net/",
-                imagePath: "./profile.jpg",
-                title: "Brewery Website",
-                techStack:
-                    [
-                        "./react.png",
-                        "./react.png"
-                    ]
-            }
         ]
 
     return (
