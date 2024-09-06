@@ -26,12 +26,14 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+        working-directory: ./LoganBiekerPortfolio/portfolio-website
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
           path: .
+        working-directory: ./LoganBiekerPortfolio/portfolio-website
 
   deploy:
     runs-on: ubuntu-latest
