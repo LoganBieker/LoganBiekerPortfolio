@@ -32,8 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
-        working-directory: ./LoganBiekerPortfolio/portfolio-website
+          path: LoganBiekerPortfolio/portfolio-website
 
   deploy:
     runs-on: ubuntu-latest
