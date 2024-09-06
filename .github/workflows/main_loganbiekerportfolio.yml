@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest 
 
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: portfolio-website
+          path: portfolio-website/dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -61,6 +61,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'LoganBiekerPortfolio'
-          slot-name: 'Production'
           package: .
           
