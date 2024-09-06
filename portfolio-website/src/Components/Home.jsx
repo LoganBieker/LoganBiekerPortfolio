@@ -1,5 +1,5 @@
 
-import DownloadCV from './downloadCV';
+//import DownloadCV from './downloadCV';
 import './Home.css'
 
 export default function Home(prop) {
