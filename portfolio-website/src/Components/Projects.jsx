@@ -16,8 +16,29 @@ export default function Projects(props) {
                         "./azure.png",
                         "./docker.png"
                     ]
+            },
+            {
+                link: "",
+                imagePath: "./realtime_weather_app.png",
+                title: "Real Time Weather App",
+                techStack:
+                    [
+                        "./react.png",
+                        "./csharp.png",
+                        "./aspnet.png",
+                        "./googlemaps.png"
+                    ]
+            },
+            {
+                link: "",
+                imagePath: "./automated_dog_feeder.png",
+                title: "Automated Dog Feeder",
+                techStack:
+                    [
+                        "./python.png",
+                        "./raspberry-pi.svg"
+                    ]
             }
-            ,
         ]
 
     return (
