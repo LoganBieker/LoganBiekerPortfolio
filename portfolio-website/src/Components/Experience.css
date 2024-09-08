@@ -11,25 +11,32 @@
     border: solid;
     border-radius: 30px;
     display: flex;
-    margin: 10%;
+    margin: 0 auto; /* Center the container */
     height: auto;
     background-color: #8EB897;
+    max-width: 1200px; /* Set a max width to contain expansion */
+    width: 100%; /* Keep the container responsive */
 }
 
-.exp-jobs-container
-{
+
+.exp-jobs-container {
     width: fit-content;
     flex: 1;
+    min-width: 250px; /* Set a minimum width for consistency */
+    max-width: 400px; /* Optional: Set a maximum width to limit expansion */
 }
 
-.exp-detail-container
-{
+
+.exp-detail-container {
     display: flex;
     text-align: left;
     flex-direction: column;
     justify-content: center;
     flex: 3;
     border-left: solid;
+    padding: 20px; /* Optional: Add padding for better layout */
+    min-width: 600px; /* Prevent shrinking */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .exp-jobs-card
@@ -97,14 +104,31 @@
         margin: 0;
     }
 
+    .exp-jobs-container
+    {
+        flex-basis: 100%;
+        min-width: 100%;
+    }
+
     .exp-jobs-card {
         height: auto; /* Make job cards taller as width shrinks */
         padding: .5em;
+
+        min-width: 0px; /* Set a minimum width for consistency */
     }
 
     .exp-detail-container
     {
+        min-width: 0px;
+        width: 100%;
         border: none;
+        padding: 0px;
+        word-wrap: break-word; /* Ensure long words wrap within the container */
+        overflow-wrap: break-word; /* Break words to prevent overflow */
+        white-space: normal; /* Allow text to wrap and not stay on one line */
+    }
+
+    .job-info {
     }
 
     .exp-jobs-card:last-child

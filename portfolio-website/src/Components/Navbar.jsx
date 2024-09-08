@@ -7,7 +7,7 @@ export default function NavBar() {
     const projects = './'
     return (
         <div className="nav-bar">
-            <Link smooth className='nav-items' to="#Home">Home</Link>
+            <Link smooth className='nav-items' to="#">Home</Link>
             <Link smooth className='nav-items' to="#AboutMe">About Me</Link>
             <Link smooth className='nav-items' to="#Experience">Experience</Link>
             <Link smooth className='nav-items' to="#Projects">Projects</Link>
