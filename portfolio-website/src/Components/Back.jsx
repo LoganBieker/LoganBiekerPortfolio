@@ -1,4 +1,4 @@
-import './back.css'
+import './Back.css'
 import { Link } from "react-router-dom";
 
 
