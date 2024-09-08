@@ -1,16 +1,16 @@
 import './Navbar.css'
+import { HashLink as Link } from 'react-router-hash-link';
 
-export default function NavBar()
-{
+export default function NavBar() {
 
     const experiance = './';
     const projects = './'
-    return(
+    return (
         <div className="nav-bar">
-            <a className='nav-items' href='#Home'>Home</a>
-            <a className='nav-items' href="#AboutMe">About Me</a>
-            <a className='nav-items' href="#Experience">Experience</a>
-            <a className='nav-items' href="#Projects">Projects</a>
+            <Link smooth className='nav-items' to="#Home">Home</Link>
+            <Link smooth className='nav-items' to="#AboutMe">About Me</Link>
+            <Link smooth className='nav-items' to="#Experience">Projects</Link>
+            <Link smooth className='nav-items' to="#Projects">Project Details</Link>
         </div>
     );
 }
