@@ -1,11 +1,11 @@
 import './Projects.css'
-
+import { Link } from 'react-router-dom';
 export default function Projects(props) {
     const allProjectInfo =
 
         [
             {
-                link: "https://washbearbrewingclient.azurewebsites.net/",
+                link: "./Brewing",
                 imagePath: "./brewing_website.png",
                 title: "Brewery Website",
                 techStack:
@@ -18,7 +18,7 @@ export default function Projects(props) {
                     ]
             },
             {
-                link: "",
+                link: "./Weather",
                 imagePath: "./realtime_weather_app.png",
                 title: "Real Time Weather App",
                 techStack:
@@ -30,7 +30,7 @@ export default function Projects(props) {
                     ]
             },
             {
-                link: "",
+                link: "./Dogfeeder",
                 imagePath: "./automated_dog_feeder.png",
                 title: "Automated Dog Feeder",
                 techStack:
@@ -41,17 +41,21 @@ export default function Projects(props) {
             }
         ]
 
+        //link: "https://washbearbrewingclient.azurewebsites.net/",
+
+
+
     return (
         <div id={props.id} className='all-project-container'>
             {allProjectInfo.map((projectInfo, index) => {
                 return (
-                    <a href={projectInfo.link} target='_blank' className="project-container" key={index}>
+                    <Link to={projectInfo.link} target='_blank' className="project-container" key={index}>
 
                         <h1 className="project-title">{projectInfo.title}</h1>
 
                         <TechImages techStack={projectInfo.techStack}></TechImages>
                         <img className='project-image' src={projectInfo.imagePath}></img>
-                    </a>
+                    </Link>
                 )
             })}
         </div>
