@@ -14,9 +14,7 @@ createRoot(document.getElementById('root')).render(
 
     <Router>
       <Routes>
-        {/* Main page with sections */}
         <Route path="/" element={<App />} />
-        {/* Side pages */}
         <Route path="/brewing" element={<Brewing />} />
         <Route path="/weather" element={<Weather />} />
         <Route path="/dogfeeder" element={<Dogfeeder />} />
