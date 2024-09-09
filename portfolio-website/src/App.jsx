@@ -18,16 +18,18 @@ function App() {
     if (location.hash) {
       const id = location.hash.replace('#', '');
       const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      setTimeout(() => {
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   }, [location]);
 
   return (
     <>
       <NavBar></NavBar>
-      <Home id='Home'></Home> 
+      <Home id='Home'></Home>
       <AboutMe id='AboutMe'></AboutMe>
       <Experience id='Experience'></Experience>
       <Projects id='Projects'></Projects>
