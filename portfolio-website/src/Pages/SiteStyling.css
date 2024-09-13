@@ -20,6 +20,7 @@
 p {
     text-align: left;
     line-height: 2rem;
+    align-items: left;
 }
 
 span {
@@ -45,4 +46,12 @@ h2 {
 
   color: #243010;
     margin-top: 0px;
+}
+
+
+.video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Modern browsers support aspect-ratio */
+  border: 0;
 }
