@@ -2,8 +2,10 @@ import './DownloadCV.css';
 
 export default function DownloadCV()
 {
+
+    const url = "https://drive.google.com/file/d/1-ya99EVLdBsV0YsIEGjx5hWl4u0CKE_V/view"
     return (
-            <a className="download-link" href="https://washbearbrewingclient.azurewebsites.net/" target="_blank">
+            <a className="download-link" href={url} target="_blank">
             <div className="download-button" >Download<br />CV</div>
             </a>
     );
