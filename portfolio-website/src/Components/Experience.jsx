@@ -8,7 +8,7 @@ const jobData = [
         date: "June 2022 - Present",
         description:
             [
-                "My primary role is developing & integrating C++ flight software onto space payloads. Roles range from active development of new algorithms to preparing payloads for flight. During my time in this role our team successfully delivered products that got launched.",
+                "My primary role is developing & integrating C++ flight software onto space payloads. Roles range from active development of new algorithms to preparing payloads for flight.",
                 "I spent six months writing test software for various payloads. The primary language used was TCL, but python was also used for various algorithms. We designed tests ensuring that the requirements specified by our customers were being met.",
                 "Along with my normal development activities I’ve also been serving as the Scrum Master on the flight software team as well as hosting division wide Lunch and Learns, helping get SMEs with expert knowledge to distribute useful information to the division."
             ]
