@@ -3,50 +3,52 @@ import "./Experience.css";
 
 const jobData = [
     {
-        title: "Principal Software Engineer",
-        company: "Northop Grumman",
-        date: "June 2022 - Present",
-        description:
-            [
-                "My primary role is developing & integrating C++ flight software onto space payloads. Roles range from active development of new algorithms to preparing payloads for flight.",
-                "I spent six months writing test software for various payloads. The primary language used was TCL, but python was also used for various algorithms. We designed tests ensuring that the requirements specified by our customers were being met.",
-                "Along with my normal development activities I’ve also been serving as the Scrum Master on the flight software team as well as hosting division wide Lunch and Learns, helping get SMEs with expert knowledge to distribute useful information to the division."
-            ]
+        title: "Advanced Software Engineer",
+        company: "General Dynamics",
+        location: "Canonsburg, PA",
+        date: "Apr 2025 - Present",
+        description: [
+            "Led implementation of a modern GitLab CI/CD pipeline, integrating automated build steps, static code analysis with SonarQube, documentation generation with Pandoc, and deployment workflows.",
+            "Drove the team’s migration from legacy CVS to modern development tools including Jira and Git, establishing best practices for code reviews.",
+            "Architected and developed test software in C and Python for previously untested embedded hardware.",
+            "Increased test throughput and efficiency by optimizing a core loop, reducing iterations by 88% and shortening overall test duration by a comparable margin."
+        ]
     },
     {
-        title: "Engineer Electronics",
-        company: "Northop Grumman",
+        title: "Principal Embedded Software Engineer",
+        company: "Northrop Grumman",
+        location: "Baltimore, MD",
+        date: "Jun 2022 - Apr 2025",
+        description: [
+            "Led the full lifecycle development of new flight software algorithms in C++ for a new satellite radar mode, including requirements definition, architecture design, implementation, integration, and testing on flight hardware.",
+            "Took ownership of final software deployment for multiple space payloads, performing critical tasks including OS updates, firmware upgrades, and full payload configuration to ensure flight readiness.",
+            "Developed and formalized repeatable flight software deployment procedures, increasing consistency across payload integrations and reducing configuration time and risk for future missions.",
+            "Served as Scrum Master for the flight software team. Organized and led division-wide Lunch and Learns on software topics such as Conda and Docker."
+        ]
+    },
+    {
+        title: "Software Integration Engineer",
+        company: "Northrop Grumman",
+        location: "Baltimore, MD",
         date: "Aug 2019 - Jun 2022",
-        description:
-            [
-                "I Developed and improved software used for testing products using LabWindows/CVI. I primarily used C but also developed in Python, C#, and MATLAB.",
-                "I maintained various test sets in a manufacturing facility, where I troubleshot hardware and software to ensure production stability.",
-                "I Led the design and production of a new programming fixture, where I coordinated with the customers, production, and the design teams. Then documented and demonstrated the product for customers and QA."
-            ]
+        description: [
+            "Managed the end-to-end creation of a new test fixture by leading the design of hardware and development of accompanying software. Then demonstrated for both customers and Quality Assurance teams to verify system capabilities and alignment with requirements.",
+            "Designed, integrated, and maintained test software in C, Python, and MATLAB for flight hardware systems, optimizing communication between test fixtures and components to ensure product functionality and reliability.",
+            "Created user-friendly interfaces (UI/GUI) using LabWindows/CVI and C for complex production tests."
+        ]
     },
     {
         title: "Research Assistant",
-        company: "Naval Research Laboratory",
-        date: "Jan 2019 & May to Aug 2019",
-        description:
-            [
-                "I wrote communication algorithms and signals using MATLAB. Then I applied machine learning techniques to categorize signals in the time domain.",
-                "I designed 3D models used for creating soft robotics using Shape memory alloys",
-                "I spend time working with a neuromorphic computer",
-                "I applied control signals to an linear actuator creating an underwater acoustic generator"
-            ]
-    },
-    {
-
-        title: "Other Experience",
-        company: "Click for more info",
-        date: "",
-        description:
-            [
-                "Electrician Assistant at L.E Balance Electrical Service, Jun 2017 to Aug 2017 - I did the electrical work for a dorm including duct work and wiring. I spend a lot of time reading schematics and putting together fixtures",
-                "Electrical Engineering Intern at HII Newport News Shipbuilding, May 2016 to August 2016 - I drew schematics & helped with the various utility work that needed to be done around the facility."
-            ]
-    }] 
+        company: "Naval Research Lab",
+        location: "Washington, DC",
+        date: "May 2019 - Aug 2019",
+        description: [
+            "Developed communication algorithms and signal processing tools in MATLAB to classify time-domain signals using machine learning techniques.",
+            "Designed and fabricated soft robotic fish using custom 3D-printed molds for silicone bodies and integrated shape memory alloys (SMAs) to enable bio-inspired actuation and motion control."
+        ]
+    }
+];
+ 
 
 
 export default function Experience(props) {
